@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Out_Of_Stock",
+"productVersion": "0.1",
+"dataUrl": "out_of_stock_build.data.unityweb",
+"wasmCodeUrl": "out_of_stock_build.wasm.code.unityweb",
+"wasmFrameworkUrl": "out_of_stock_build.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.9f1"
+}
