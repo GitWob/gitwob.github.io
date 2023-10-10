@@ -1,0 +1,9 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+*/
+ol{
+  list-style-position: inside;
+}
+
+.result{
+  display:inline;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSOM - Documentation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/default-styles.css">
+  <script type="module" src="src/init.js"></script>
+</head>
+<body class="has-background-grey-dark">
+  
+  <header-component></header-component>
+  
+  <nav-component data-page="documentation"></nav-component>
+
+  <!-- simple layout for our last page! -->
+
+  <!-- Main Page -->
+  <main class="px-1 py-1">
+    <div class="box has-background-info m-2 p-1"> 
+      <div class="is-large p-4">
+        <!-- Row #1 -->
+        <div class="title has-text-light">All About FSOM</div>
+        
+        <!-- Row #2  -->
+        <div class="box mt-2">
+          <h2 class="title">PROPOSAL</h2>
+          <h2 class="subtitle has-text-weight-bold mt-2 mb-0">What is FSOM?</h2>
+          <p>
+            FSOM, or Future Sound Of Music, is a web app. It sources music genres yet to come from the Binary Jazz Genrerator API (see sources).
+            Then it uses RiTa.js (see sources again) to extrapolate song titles, artists, and lyrics from the words the Genrerator gives it.
+            The user participates in this part by making suggestions, clicking words that don't fit to change them into hopefully better words (as in the Blackout Poetry Demo, also in the sources).
+            After acting as an editor of the information around their new genre, the user can post their work to the community page.
+          </p>
+          <ol>
+            <li><a href="https://binaryjazz.us/genrenator-api/">Genrerator by Binary Jazz</a></li>
+            <li><a href="https://rednoise.org/rita/">RiTa.js by Rednoise</a></li>
+            <li><a href="https://github.com/tonethar/IGME-330-Master/blob/master/notes/blackout-poetry-maker.md">Blackout Poetry Demo by Tonethar</a></li>
+          </ol>
+          <h2 class="subtitle has-text-weight-bold mb-0">And now, a paper mock-up of the App UI: (scroll down for more)</h2>
+          <img class="image mt-2" width="500" src="images/fsom-sketchbook.png" alt="A sketch of the future app page.">
+          <h2 class="subtitle has-text-weight-bold mb-0">Q: Why are these bands/songs/lyrics so inane?</h2>
+          <p>First of all, "Michigan Dirt" was a real genre name invented by the API. I just stuck with it. Natural language processing has come a long way, but I find a lot of humor and charm in AI when it shows how artificial it really is.
+          Since we have a very small data set to work with (Genrerator's genres are usually less than 4 words), RiTa.js will have a very limited scope of words to take inspiration from.
+          <br>I plan to use enough RiTa features (especially rhymes in the lyrics portion of the program) to create text that rougly matches the essence of the given genre. However, I hope the results will be thoroughly silly and unrelatable to current musical tastes, to more accurately imagine what listening to the music of the future will be like.
+          </p>
+          <h2 class="title mt-4">PROJECT REQUIREMENTS</h2>
+          <a class="is-link" href="https://github.com/tonethar/IGME-330-Fall-2022/blob/main/projects/p1-checkpoint-2.md">https://github.com/tonethar/IGME-330-Fall-2022/blob/main/projects/p1-checkpoint-2.md</a>
+          <h2 class="title mt-4">RESOURCES UTILIZED</h2>
+          <ol>
+            <li><a class="is-link" href="https://github.com/tonethar/IGME-230-Master/blob/master/notes/web-apps-9.md">RIT IGME 230 - Web Apps 9 (localStorage reference) | GitHub</a></li>
+            <li><a class="is-link" href="https://www.digitalocean.com/community/tutorials/web-components-composing-slots-named-slots">Composing Custom Elements With Slots And Named Slots | DigitalOcean</a></li>
+            <li><a class="is-link" href="https://firebase.google.com/docs/database/web/read-and-write">Read and Write Data on the Web | Firebase Realtime Database Documentation</a></li>
+            <li><a class="is-link" href="https://stackoverflow.com/questions/105034/how-do-i-create-a-guid-uuid">How do I create a guid or uuid? | Stack Overflow</a></li>
+            <li><a class="is-link" href="https://stackoverflow.com/questions/42299594/await-is-a-reserved-word-error-inside-async-function">Await is a reserved word? | Stack Overflow</a></li>
+            <li><a class="is-link" href="https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID">crypto.randomUUID Documentation (found through the above question) | Mozilla Reference</a></li>
+            <li><a class="is-link" href="https://www.w3schools.com/html/html5_webstorage.asp#gsc.tab=0">HTML Web Storage API Intro | w3schools</a></li>
+            <li><a class="is-link" href="https://www.w3schools.com/js/js_json_objects.asp">JSON Object Literals Intro | w3schools</a></li>
+            <li><a class="is-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Everything I needed to know about array manipulation | Mozilla Reference</a></li>
+            <li><a class="is-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign">Object.assign() | Mozilla Reference</a></li>
+            <li><a class="is-link" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event">beforeunload event | Mozilla Reference</a></li>
+            <li><a class="is-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">All about promises | Mozilla Reference</a></li>
+            <li><a class="is-link" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute">element.setAttribute() | Mozilla Reference</a></li>
+            <li><a class="is-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators">All the logical operators you could ever want | Mozilla Reference</a></li>
+            <li><a class="is-link" href="https://www.kaggle.com/datasets/duketemon/wordnet-synonyms">Dataset of Synonyms from WordNet Database v3.0 | Kaggle</a></li>
+            <li><a class="is-link" href="https://rednoise.org/rita/">RiTa.js by Rednoise (especially their learning page and documentation) | Rednoise.org</a></li>
+            <li><a class="is-link" href="https://bulma.io/documentation/">Everything Bulma | bulma.io</a></li>
+          </ol>
+          <h2 class="title mt-4">API</h2>
+          <p>It's all here: </p><a class="is-link" href="https://binaryjazz.us/genrenator-api/">https://binaryjazz.us/genrenator-api/</a>
+          <h2 class="title mt-4">NOTEWORTHY</h2>
+          There's a "song generator" that combines RiTa.js markov chains with a dataset of syllables containing 117,205 unique keys.
+          <h2 class="title mt-4">GRADING</h2>
+          <p>FSOM deserves a good grade.</p>
+          <p>Specifically, I think it deserves a 95% because those darn spinners do not spin (something's up with my async code, I know they used to spin).</p>
+          <h2 class="title mt-4">TO DO</h2>
+          <p>The spinner in the 'get genre' box of the app works. The rest do not. I think this because the fetch() api is used to fetch a genre name, and fetch() is all set up to work asynchronously. However, my generation code is not set up like that, and it needs to be adjusted for async and await to work. I know those keywords are in the script, they're just not doing anything.</p>
+          <p>The state resetting system in the app is also very much in need of a refactor. It does too much by hand and repeats itself too much. There isn't even a real state machine, just the implication of one.</p>
+          <p>I would like the community page to load songs in increments with a 'more!' button, instead of all at once.</p>
+          <p>The songs could be better.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer-component data-email="wno9619@rit.edu">Future Sound of Music (2022)</footer-component>
+
+</body>
+</html>

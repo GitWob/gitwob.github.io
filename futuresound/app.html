@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSOM - App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/default-styles.css">
+  <script type="module" src="src/app.js"></script>
+  <script defer src="https://unpkg.com/rita@2.7.1/dist/rita.js"></script>
+  <style>
+    select#field-limit{
+      width:2.5rem;
+    }
+    h2.subtitle{
+      font-family:'Underdog',sans-serif;
+    }
+  </style>
+</head>
+
+
+<body class="has-background-grey-dark">
+
+  <header-component></header-component>
+  
+  <nav-component data-page="app"></nav-component>
+
+  <!-- the app -->
+  <main class="px-1 py-1">
+    <div class="box has-background-info m-2 p-1">
+      <div class="is-large p-4">
+        <!-- Title -->
+        <div class="title has-text-light">Let's make some music!</div>
+        <!-- row #1 - Get a Genre -->
+        <div id="box-controls" class="box">
+          <div class="control is-inline-block">
+            <p class="mb-1">1. Click to get a <b>genre</b></p>
+            <button
+            id="btn-get-genre"
+            class="button is-primary is-medium"
+            title="Grab a genre!">Click!</button>
+            <h2 id="genre-name" class="result is-size-2 has-text-weight-bold ml-2">...</h2>
+          </div>
+        </div>
+        <!-- row #2 - Introduction -->
+        <!-- <div class="box mt-2">
+          <p class="mb-2">
+            Now you get involved!<br>In any of the boxes below, click any word in the results to put a new word in its place!
+          </p>
+        </div> -->
+        <!-- row #3 - Name an Artist -->
+        <div class="box">
+          <div class="control is-inline-block">
+            <p class="mb-1">2. Click to name an <b>artist</b></p>
+            <button
+            id="btn-gen-artist"
+            class="button is-primary is-medium"
+            title="Name an artist!">Click!</button>
+            <h2 id="artist-name" class="result is-size-2 has-text-weight-bold ml-2">...</h2>
+          </div>
+        </div>
+        <!-- row #4 - Name a Song -->
+        <div class="box">
+          <div class="control is-inline-block">
+            <p class="mb-1">3. Click to name a <b>song</b></p>
+            <button
+            id="btn-gen-song"
+            class="button is-primary is-medium"
+            title="Name a song!">Click!</button>
+            <h2 id="song-name" class="result is-size-2 has-text-weight-bold ml-2">...</h2>
+          </div>
+        </div>
+        <!-- row # - Write Lyrics -->
+        <div class="box">
+          <div clss="control is-inline-block">
+            <p class="mb-1">4. Click to generate some <b>lyrics</b></p>
+            <button
+            id="btn-gen-lyrics"
+            class="button is-primary is-medium"
+            title="Generate lyrics!">Click!</button>
+            <div class="container has-text-centered is-max-desktop mb-5">
+              <div id="lyrics-area" class="result is-size-4 has-text-weight-bold">[awaiting data]</div>
+            </div>
+          </div>
+        </div>
+        <div class="container has-text-centered is-max-desktop mb-5">
+          <button
+          id="btn-publish"
+          class="button is-primary is-inverted is-outlined is-large"
+          title="Publish your song!">Publish!</button>
+          <div class="title has-text-light mt-4">Your song!</div>
+          <div id="result-card-holder"></div>
+          <button
+          id="btn-start-over"
+          class="button is-danger is-medium mt-2"
+          title="Begin anew!">Start Over!</button>
+          <p class="has-text-warning has-text-weight-bold mt-1">This will reset everything, make sure your song is published!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer-component data-email="wno9619@rit.edu">Future Sound of Music (2022)</footer-component>
+
+</body>
+</html>

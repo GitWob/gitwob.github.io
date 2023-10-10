@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSOM - Community</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/default-styles.css">
+  <script type="module" src="src/community.js"></script>
+  <style>
+    #element-card-holder{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+      grid-gap: 0.5em;
+    }
+  </style>
+</head>
+<body class="has-background-grey-dark">
+
+  <header-component></header-component>
+  
+  <nav-component data-page="community"></nav-component>
+
+  <!-- stubbed out/in sharing UI for our favorites page -->
+
+  <!-- Main Page -->
+  <main class="px-1 py-1">
+    <div class="box has-background-info m-2 p-1"> 
+      <div class="is-large p-4">
+        <!-- Row #1 -->
+        <div class="title has-text-light">Community</div>
+        
+        <!-- Row #2  -->
+        <div class="box mt-2">
+          <h2 class="subtitle has-text-weight-bold mb-0">This is it</h2>
+          <p>This is where the music afficionados of the present intermingle to dream of the art form's inevitable blossoming into [see below]</p>
+          <!-- <button
+          id="btn-more"
+          class="button is-primary is-medium"
+          title="See more songs!">More!</button> -->
+        </div>
+
+        <!-- Row #3 -->
+        <div id="element-card-holder">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer-component data-email="wno9619@rit.edu">Future Sound of Music (2022)</footer-component>
+
+</body>
+</html>
