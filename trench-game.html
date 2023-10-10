@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Will O'Brien</title>
+  <meta name="description" content="A classic company or blog layout with a sidebar. Built with Pico CSS.">
+
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+
+  <!-- Custom styles for this example -->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+  <!-- Hero -->
+  <div class="hero" data-theme="dark">
+    <nav class="container-fluid">
+      <ul>
+        <li>
+        <details role="list" dir="rtl">
+          <summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
+          <ul role="listbox">
+            <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+            <li><a href="#" data-theme-switcher="light">Light</a></li>
+            <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+          </ul>
+        </details>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="./" class="contrast"><strong>Will O'Brien</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="media/will-obrien-resume.pdf" class="contrast" target="_blank">View Resume</a></li>
+      </ul>
+    </nav>
+  </div><!-- ./ Hero -->
+
+  <!-- Main -->
+  <main class="container">
+
+    <section>
+      <h3><strong>TRENCH GAME</strong></h3>
+      <p>TRENCH GAME is a turn-based multiplayer game for two players. Two armies of shapes battle in an open
+        field, to the last shape standing. Capturing the trenches gives your team an edge, but it takes careful negotiations with luck
+        to keep your shapes safe.</p>
+      <p>Trench Game was my first JavaScript game and is still one of my favorite projects.</p>
+      <ul><li><a href="https://people.rit.edu/wno9619/235/project3/" target="_blank"><strong>Play now</strong></a></li></ul>
+
+    </section>
+
+    <section>
+      <h5>Art and visual direction</h5><p>TRENCH GAME is an online reimagining of a pen-and-paper game I played on index cards years ago. I wanted to keep the minimal hand-drawn look, but designing for the web was a chance to give the visuals interactivity that was impossible on paper. I used hand-drawn PixiJS sprites for the game pieces, and drew the UI programmatically with PixiJS's built in graphics class.</p>
+      <h5>Procedural generation</h5><p>I wrote a set of JavaScript helper methods to procedurally generate the game's world. The generator functions are customizable, taking input about the gameplay elements to place in the world as well the size of the browser window. This means you can play it on a wide variety of screen dimensions, and you'll get a different scenario every time! It also means that some screens are too big, and the trenches don't draw all the way down. I mean to fix this bug, but this game is kind of on the back burner in terms of support.
+      <h5>Sound</h5><p>I used the HowlerJS library to play sounds, and recorded all the audio myself using an electric guitar, a digital reverb pedal, an old crackly speaker, and a coffee grinder. I mixed the audio lightly with Ableton, but for the most part it didn't need music-quality production.</p>
+      <h5>What I used</h5>
+      <p>The gameplay and interactivity are written with JavaScript. The PixiJS library is used for the visuals, and the HowlerJS library is used for sound. I used Ableton Live and Audacity for audio creation. The site Trench Game is hosted on is made with HTML and CSS.</p>
+      
+    </section>
+    </section>
+
+  </main><!-- ./ Main -->
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>Built with <a href="https://picocss.com" target="_blank">Pico</a></small>
+  </footer><!-- ./ Footer -->
+
+  <!-- Minimal theme switcher -->
+  <script src="src/minimal-theme-switcher.js"></script>
+
+</body>
+
+</html>

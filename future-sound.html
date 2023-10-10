@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Will O'Brien</title>
+  <meta name="description" content="A classic company or blog layout with a sidebar. Built with Pico CSS.">
+
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+
+  <!-- Custom styles for this example -->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+  <!-- Hero -->
+  <div class="hero" data-theme="dark">
+    <nav class="container-fluid">
+      <ul>
+        <li>
+        <details role="list" dir="rtl">
+          <summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
+          <ul role="listbox">
+            <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+            <li><a href="#" data-theme-switcher="light">Light</a></li>
+            <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+          </ul>
+        </details>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="./" class="contrast"><strong>Will O'Brien</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="media/will-obrien-resume.pdf" class="contrast" target="_blank">View Resume</a></li>
+      </ul>
+    </nav>
+  </div><!-- ./ Hero -->
+
+  <!-- Main -->
+  <main class="container">
+
+    <section>
+      <h3><strong>FUTURE SOUND OF MUSIC</strong></h3>
+      <p>Future Sound of Music was my attempt to write an artificial intelligence, build a database, and also design a website. In some ways, it was a success! In other ways, it is at least funny to watch. The site is built around <a href="https://binaryjazz.us/genrenator-api/" target="_blank">Binary Jazz's 'Genrerator' API</a>, which serves made-up music genre names. By utilizing various word association strategies, Future Sound of Music extrapolates from those genre names to imagine what music in those genres could be like.</p>
+      <ul>
+      <li><a href="https://people.rit.edu/wno9619/330/obrien-p1-fin/app.html" target="_blank"><strong>Visit site</strong></a></li>
+      <li><a href="https://youtu.be/FnVn2xkSTKU" target="_blank"><strong>Demo video (YouTube)</strong></a></li>
+      <li><p>Below is a sample of the lyrics generated on this site - click it to see more!</p>
+      <a href="https://people.rit.edu/wno9619/330/obrien-p1-fin/community.html" target="_blank"><img src="media/fsom-banner-old.png"></a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h5>"Artifical intelligence"</h5>
+      <p>At one point, FSOM used Markov chains to create song lyrics with the influence of the genre name and other generated details. Then, I realized there could be some legal and artistic concerns about training the Markov chain with the lyrics of other, real-world musicians.</p>
+      <bl>
+        <li>First, I don't own their work.</li>
+        <li>Secondly, FSOM is meant to help the user imagine the music of vague and alien artistic movements yet to come. If they recognize songs they know in the output, the illusion is broken.</li>
+      </bl>
+      <br>
+      <p>Instead, I used <a href="https://rednoise.org/rita/" target="_blank">RiTa.js</a> to make lyrics based entirely on rhymes. To find words to rhyme, I searched through an open <a href="https://www.kaggle.com/datasets/duketemon/wordnet-synonyms" target="_blank">database of words and their synonyms</a> I found on Kaggle, using the words in the genre string as the key. This results in very single-minded songs, but that's how a lot of real lyrics are.</p>
+      <h5>UI/UX</h5>
+      <p>I used Bulma for the CSS styling, and stuck with JavaScript web components to build the functional pieces of the UI. The song creation process takes in user input over several steps, and the UI keeps the user on track and does not allow interactions that would result in bad data.</p>
+      <h5>Database</h5>
+      <p>I used Firebase to store users' creations. Users can save favorite lyrics using local storage, and visit the favorites page to view them.</p>
+    </section>
+    </section>
+
+  </main><!-- ./ Main -->
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>Built with <a href="https://picocss.com" target="_blank">Pico</a></small>
+  </footer><!-- ./ Footer -->
+
+  <!-- Minimal theme switcher -->
+  <script src="src/minimal-theme-switcher.js"></script>
+
+</body>
+
+</html>

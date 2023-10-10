@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Will O'Brien</title>
+  <meta name="description" content="A classic company or blog layout with a sidebar. Built with Pico CSS.">
+
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+
+  <!-- Custom styles for this example -->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+  <!-- Hero -->
+  <div class="hero" data-theme="dark">
+    <nav class="container-fluid">
+      <ul>
+        <li>
+        <details role="list" dir="rtl">
+          <summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
+          <ul role="listbox">
+            <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+            <li><a href="#" data-theme-switcher="light">Light</a></li>
+            <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+          </ul>
+        </details>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="./" class="contrast"><strong>Will O'Brien</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="media/will-obrien-resume.pdf" class="contrast" target="_blank">View Resume</a></li>
+      </ul>
+    </nav>
+  </div><!-- ./ Hero -->
+
+  <!-- Main -->
+  <main class="container">
+
+    <section>
+      <h3><strong>OVERCASTE</strong></h3>
+      <p>Overcaste is a 3D adventure game about a sand-shifter protecting her home from futuristic
+        invading forces. The game is all about brisk and fluid movement through beautiful desert environments, featuring
+        surreal boss battles against monolithic alien oppressors. I was the UI/UX designer from January of 2022 to
+        December of 2023.</p>
+      <ul>
+      <li><a href="https://youtu.be/DrrbGOVPvgM" target="_blank"><strong>Overview Video</strong></a></li>
+      <li><a href="https://threedeadoysters.itch.io/overcaste" target="_blank"><strong>Store Page</strong></a></li>
+      <li><a href="https://twitter.com/OvercasteGame" target="_blank"><strong>Twitter</strong></a></li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="grid">
+        <img class="game-banner" src="media/boost-bar-before.gif" alt="Overcaste Banner">
+        <div>
+          <h5>UI prototyping and testing</h5>
+          <p>I came into the Overcaste team following my time in Personal Eyes, where the mid-2000s visual theme
+            dictated the UI art. Overcaste, on the other hand, was not as mature in its art direction. I started by
+            designing Overcaste's UI with strong visuals first, but progress was slow because our visual language didn't
+            exist yet.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <img class="game-banner" src="media/jump-bar-before.gif" alt="Overcaste Banner">
+        <div>
+          <p>Then I had a meeting with a mentor who introduced me to the value of designing the User
+            Experience before even thinking of the User Interface. After that, I pivoted to completing the necessary
+            interactions and info presentation with simple shapes, and adjusting them based on playtest feedback. This
+            way of working made iteration much faster.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <img class="game-banner" src="media/boost-bar-after.gif" alt="Overcaste Banner">
+        <div>
+          <h5>Working with a professional artist</h5>
+          <p>The most exciting part of Overcaste was working with our team's illustrator. We concepted ideas together
+            and once his art assets were complete, I found ways to animate them in the engine. Some of these assets
+            were
+            static images I had to squash and stretch. Others were animated, and I created materials in Unreal
+            to flip through the frames of the animation.</p>
+        </div>
+      </div>
+      <br>
+      <div>
+        <h5>What we used</h5>
+        <p>Overcaste is being developed with Unreal Engine 4.</p>
+      </div>
+
+    </section>
+    </section>
+
+  </main><!-- ./ Main -->
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>Built with <a href="https://picocss.com" target="_blank">Pico</a></small>
+  </footer><!-- ./ Footer -->
+
+  <!-- Minimal theme switcher -->
+  <script src="src/minimal-theme-switcher.js"></script>
+
+</body>
+
+</html>

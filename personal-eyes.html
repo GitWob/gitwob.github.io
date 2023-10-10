@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Will O'Brien</title>
+  <meta name="description" content="A classic company or blog layout with a sidebar. Built with Pico CSS.">
+
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+
+  <!-- Custom styles for this example -->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+  <!-- Hero -->
+  <div class="hero" data-theme="dark">
+    <nav class="container-fluid">
+      <ul>
+        <li>
+        <details role="list" dir="rtl">
+          <summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
+          <ul role="listbox">
+            <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+            <li><a href="#" data-theme-switcher="light">Light</a></li>
+            <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+          </ul>
+        </details>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="./" class="contrast"><strong>Will O'Brien</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="media/will-obrien-resume.pdf" class="contrast" target="_blank">View Resume</a></li>
+      </ul>
+    </nav>
+  </div><!-- ./ Hero -->
+
+  <!-- Main -->
+  <main class="container">
+
+    <section>
+      <h3><strong>PERSONAL EYES</strong></h3>
+      <p>Personal Eyes is an indie survival horror game inspired by classic horror games of the PS2 era. It progressed
+        through 3 cycles of development in 9 months:</p>
+      <bl>
+        <li>As an independent project in the Summer of 2021 (I worked part-time).</li>
+        <li>Selected for the MAGIC Maker: Prototype Edition program in the Fall of 2021 (I worked part-time).</li>
+        <li>Entered the full MAGIC Maker program in the Spring of 2022 (I worked full-time).</li>
+      </bl>
+      <br>
+      <p>Personal Eyes has received funding and mentorship from RIT's MAGIC Center, as well as mentorship from several
+        developers at Rockstar Games. It was published in May of 2022 along with a postmortem featuring a Q&A with the
+        game's developers.</p>
+      <ul>
+        <li><a href="https://violentvioiet.itch.io/personal-eyes" target="_blank"><strong>Itch.io</strong></a></li>
+        <li><a href="https://twitter.com/eyes__game" target="_blank"><strong>Twitter</strong></a></li>
+      </ul>
+    </section>
+
+    <section>
+
+      <h5>Work samples</h5>
+      <div class="grid">
+        <img src="media/keypad.png">
+        <p>Our keypad pop-up.</p>
+      </div>
+
+      <div class="grid">
+        <img src="media/keypad_02.png">
+        <p>A cross-section of the layers of the keypad background.</p>
+      </div>
+
+      <div class="grid">
+        <img src="media/keypad_04.png">
+        <p>A cross-section of the layers of the buttons on the keypad. There are several composited textures taken from photographs on Textures.com, and other details are hand-drawn.</p>
+      </div>
+
+      <div class="grid">
+        <img src="media/tutorial.png">
+        <p>I set up tutorial prefabs so the level designer could place
+          tutorial pop-ups with custom text anywhere on the map.</p>
+      </div>
+
+      <div class="grid">
+        <img src="media/ui-pieces.png">
+        <p>Art I created for our main menu, pause menu, and in-game pop-ups and prompts.<br>Also stars for one of my particle systems.</p>
+      </div>
+
+      <div class="grid">
+        <img src="media/phone.png">
+        <p>Our player character's flip-phone, which acts as a health bar and inventory screen.</p>
+      </div>
+
+      <div class="grid">
+        <img src="media/phone-ui.png">
+        <p>Samples and cross-sections of the art created for the flip-phone UI.<br>This includes some unused assets from
+          the time when the player character would find a dagger and a sword.</p>
+      </div>
+
+      <br>
+      <h5>UI conceptualization and iteration</h5>
+      <p>Personal Eyes evolved through a wide variety of visual identities. I had to design and redesign to keep the UI
+        style in line with our art direction. As my longest-term project to date, I had the opportunity to iterate and
+        refine ideas based on feedback from our artists, players, and industry mentors. It was absolutely a privilege to
+        see that process firsthand, even if it meant my work had to be revised all the time.</p>
+      <h5>UI implementation and tech art</h5>
+      <p>I was also responsible for the scripting and implementation of UI systems in game. This ranges from main menus
+        and tutorial pop-ups to real-time HUD pieces like the player's inventory and ammo counter. I used Unity's
+        particle system and the Shader Graph system to create effects. Later, I created more effects with Universal Render Pipeline settings.</p>
+      <h5>What we used</h5>
+      <p>Personal Eyes is built in Unity. I used Krita to draw and edit sprites for the UI. I also used
+        Axure RP to mockup UI elements to help our art director make visual decisions.
+      </p>
+    </section>
+    </section>
+
+  </main><!-- ./ Main -->
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>Built with <a href="https://picocss.com" target="_blank">Pico</a></small>
+  </footer><!-- ./ Footer -->
+
+  <!-- Minimal theme switcher -->
+  <script src="src/minimal-theme-switcher.js"></script>
+
+</body>
+
+</html>

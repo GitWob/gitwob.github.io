@@ -1,1 +1,137 @@
-Hellow World
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Will O'Brien</title>
+  <meta name="description" content="A classic company or blog layout with a sidebar. Built with Pico CSS.">
+
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+
+  <!-- Custom styles for this example -->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+  <!-- Hero -->
+  <div class="hero" data-theme="dark">
+    <nav class="container-fluid">
+      <ul>
+        <li>
+          <details role="list" dir="rtl">
+            <summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
+            <ul role="listbox">
+              <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+              <li><a href="#" data-theme-switcher="light">Light</a></li>
+              <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="./" class="contrast"><strong>Will O'Brien</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="media/will-obrien-resume.pdf" class="contrast" target="_blank">View Resume</a></li>
+      </ul>
+    </nav>
+  </div><!-- ./ Hero -->
+
+  <!-- Main -->
+  <main class="container">
+
+    <section>
+      <p>Welcome to my web site!</p>
+      <p>I'm Will, a computer visual designer and developer. In 2023 I graduated with honors from RIT, with a degree in Game Design
+        and Development.
+        Now I create graphics and web presences for music projects, and I continue to program gameplay systems
+        for indie games.
+        This Summer I also worked as a technology camp teacher introducing young people to coding and creative tools.
+        <br>See my <a href="media/will-obrien-resume.pdf" target="_blank">resume</a> or the many project stories below for more details.</p>
+    </section>
+
+    <section>
+      <div class="grid">
+        <a href="music-brands.html" aria-label="Example"><img class="game-banner" src="media/ep-eerie.png"
+            alt="Music Brands Banner"></a>
+        <p>
+          <a href="music-brands.html">Music Brands</a><br>
+          <small>Online design for musicians -<br>lettering, typography, video, photography, web programming and more</small>
+        </p>
+      </div>
+
+      <div class="grid">
+        <a href="overcaste.html" aria-label="Example"><img class="game-banner" src="media/boost-bar-after.gif"
+            alt="Overcaste Banner"></a>
+        <p>
+          <a href="overcaste.html">Overcaste</a><br>
+          <small>Sand-shifting adventure in Unreal Engine 4 -<br>my higest production quality UI/UX design to
+            date</small>
+        </p>
+      </div>
+
+      <div class="grid">
+        <a href="personal-eyes.html" aria-label="Example"><img class="game-banner" src="media/personal-eyes-banner.png"
+            alt="Personal Eyes Banner"></a>
+        <p>
+          <a href="personal-eyes.html">Personal Eyes</a><br>
+          <small>PS2-era Survival Horror in Unity -<br>my first full-time gamedev work</small>
+        </p>
+      </div>
+
+      <div class="grid">
+        <a href="future-sound.html" aria-label="Example"><img class="game-banner" src="media/fsom-banner.png"
+            alt="Future Sound of Music Banner"></a>
+        <p>
+          <a href="future-sound.html">Future Sound of Music</a><br>
+          <small>A web app that pretends to make music -<br>I was the frontend UI/UX designer and backend database
+            wrangler</small>
+        </p>
+      </div>
+
+      <div class="grid">
+        <a href="stock-search.html" aria-label="Example"><img class="game-banner" src="media/stock-search-banner.png"
+            alt="Stock Search Banner"></a>
+        <p>
+          <a href="stock-search.html">Stock Search</a><br>
+          <small>2d physics platformer game jam in Unity -<br>my first mentorship experience</small>
+        </p>
+      </div>
+      <div class="grid">
+
+        <a href="locke-smith.html" aria-label="Example"><img class="game-banner" src="media/locke-smith-banner.png"
+            alt="Locke Smith Banner"></a>
+        <p>
+          <a href="locke-smith.html">Locke Smith</a><br>
+          <small>Wonky 3d platformer in Unity -<br>a two-day game jam with a great team</small>
+        </p>
+      </div>
+
+      <div class="grid">
+
+        <a href="trench-game.html" aria-label="Example"><img class="game-banner" src="media/trench-game-banner.png"
+            alt="Trench Game Banner"></a>
+        <p>
+          <a href="trench-game.html">TRENCH GAME</a><br>
+          <small>Hot-seat versus strategy game in JavaScript -<br>my first web app</small>
+        </p>
+      </div>
+
+    </section>
+
+  </main><!-- ./ Main -->
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>Built with <a href="https://picocss.com" target="_blank">Pico</a>
+  </footer><!-- ./ Footer -->
+
+  <!-- Minimal theme switcher -->
+  <script src="src/minimal-theme-switcher.js"></script>
+
+</body>
+
+</html>
